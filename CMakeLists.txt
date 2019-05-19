@@ -33,19 +33,19 @@ add_subdirectory(${CSV_SOURCE_DIR})
 #
 ### Tests
 #add_subdirectory("tests")
-set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/include/internal/)
+#set(SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/include/internal/)
 #set(TEST_DIR ${CMAKE_CURRENT_LIST_DIR}/tests)
 
 # file(GLOB_RECURSE SOURCES include/ *.hpp *.cpp)
-set(SOURCES
-	${SOURCE_DIR}/csv_reader.cpp
-	${SOURCE_DIR}/csv_reader_iterator.cpp
-	${SOURCE_DIR}/csv_row.cpp
-	${SOURCE_DIR}/csv_stat.cpp
-	${SOURCE_DIR}/csv_utility.cpp
-	${SOURCE_DIR}/data_type.cpp
-	${SOURCE_DIR}/giant_string_buffer.cpp
-)
+#set(SOURCES
+#	${SOURCE_DIR}/csv_reader.cpp
+#	${SOURCE_DIR}/csv_reader_iterator.cpp
+#	${SOURCE_DIR}/csv_row.cpp
+#	${SOURCE_DIR}/csv_stat.cpp
+#	${SOURCE_DIR}/csv_utility.cpp
+#	${SOURCE_DIR}/data_type.cpp
+#	${SOURCE_DIR}/giant_string_buffer.cpp
+#)
 #set(TEST_SOURCES
 #	${TEST_DIR}/catch.hpp
 #	${TEST_DIR}/main.cpp
@@ -58,11 +58,11 @@ set(SOURCES
 #	${TEST_DIR}/test_write_csv.cpp
 #)
 
-include_directories(${CMAKE_CURRENT_LIST_DIR}/include/)
-#include_directories(${TEST_DIR})
-
-## Main Library
-add_library(csv ${SOURCES})
+#include_directories(${CMAKE_CURRENT_LIST_DIR}/include/)
+##include_directories(${TEST_DIR})
+#
+### Main Library
+#add_library(csv ${SOURCES})
 #set_target_properties(csv PROPERTIES LINKER_LANGUAGE CXX)
 
 ### Executables
