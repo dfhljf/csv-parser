@@ -1,6 +1,7 @@
 #pragma once
 #include <unordered_map>
 #include <vector>
+#include "utils/Hash.h"
 #include "csv_reader.hpp"
 
 namespace csv {

@@ -17,7 +17,7 @@ namespace csv {
      *  @brief Convienience functions for parsing small strings
      */
      ///@{
-    CSVCollection operator ""_csv(const char*, size_t);
+    CSVCollection operator "" _csv(const char*, size_t);
     CSVCollection parse(const std::string& in, CSVFormat format = DEFAULT_CSV);
     ///@}
 
