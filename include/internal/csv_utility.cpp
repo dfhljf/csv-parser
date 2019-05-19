@@ -27,7 +27,7 @@ namespace csv {
      *  \snippet tests/test_read_csv.cpp Escaped Comma
      *
      */
-    CSVCollection operator ""_csv(const char* in, size_t n) {
+    CSVCollection operator "" _csv(const char* in, size_t n) {
         std::string temp(in, n);
         return parse(temp);
     }
