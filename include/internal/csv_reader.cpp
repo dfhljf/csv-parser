@@ -521,13 +521,13 @@ namespace csv {
      *
      */
     bool CSVReader::read_row(CSVRow &row) {
-        if (this->records.empty()) {
+        while (this->records.empty()) {
             if (!this->eof()) {
                 this->read_csv("", internals::ITERATION_CHUNK_SIZE);
             }
             else return false; // Stop reading
         }
-
+        
         row = std::move(this->records.front());
         this->records.pop_front();
 
