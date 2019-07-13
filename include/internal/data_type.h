@@ -43,7 +43,7 @@ namespace csv {
 
         /* Compute 10 to the power of n */
         template<typename T>
-        const long double pow10(const T& n) {
+        long double pow10(const T& n) {
             long double multiplicand = n > 0 ? 10 : 0.1,
                 ret = 1;
             T iterations = n > 0 ? n : -n;
